@@ -436,7 +436,7 @@ open class STTextView: NSView, CALayerDelegate, NSTextInput {
         }
     }
 
-    private func setString(_ string: Any?) {
+    public func setString(_ string: Any?) {
         undoManager?.disableUndoRegistration()
         defer {
             undoManager?.enableUndoRegistration()
